@@ -1,0 +1,12 @@
+var fruits;
+fruits = ['mango', 'apple', 'banana', 'orange'];
+console.log(fruits);
+var animals;
+animals = ['Tiger', 'Lion', "Rabit"];
+console.log(animals);
+var person;
+person = ['Ravi', 30, "Anil", 40];
+console.log(person);
+var genericArray;
+genericArray = ['Ravi', 30, "Anil", 40, true, 344.9090, false, 233.0000];
+console.log(genericArray);

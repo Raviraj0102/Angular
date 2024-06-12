@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+
+            <h2>ng-for-obj  directives...</h2>
+
+            
+
+            <table border="2">
+
+                <tr>
+                    <td>Emp Id</td>
+                    <td>Name</td>
+                    <td>Salary</td>
+                    </tr>
+                    <tr *ngFor ="let emp of emps">
+                        <td>{{emp.empId}}</td>
+                        <td>{{emp.empName}}</td>
+                        <td>{{emp.salary}}</td>
+
+
+
+                    </tr>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+
+

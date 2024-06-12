@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Welcome to Login App</h1><br/>
+      <hr/>
+      <hr/>
+
+      UserName :: <input type=" text" [(ngModel)]="username" value="username"/><br/>
+      Password :: <input type=" password" [(ngModel)]="password" value="password"/><br/>
+
+      <input type="submit"  value = "Login" (click)="CheckLogin()"/>
+      {{msg}}
+
+
+    </div>
+  </div>
+</div>

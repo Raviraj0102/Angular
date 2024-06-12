@@ -1,0 +1,35 @@
+<div class="container">
+
+  <div class="row">
+
+    <div class="col-md-12">
+
+      <form>
+          <h2>Registration Form</h2><br/>
+          <hr/>
+
+          UserName : <input type=" text"  [(ngModel)]="username"  placeholder="enter username"/><br/>
+          Password : <input type=" password"  [(ngModel)]="password" placeholder="enter password"/><br/>
+          ConfirmPassword : <input type=" password"  [(ngModel)]="comfirmPasswprd" placeholder="re-enter password" /><br/>
+          Gender : <input type="radio" name ="gender" [(ngModel)]="gender" value="M"/>Male
+                   <input type="radio" name ="gender" [(ngModel)]="gender" value="F"/>Fe-Male<br/>
+          Country : <select [(ngModel)]="country">
+            <option> </option>
+            <option> India</option>
+            <option> US</option>
+            <option>China </option>
+            <option> Japan</option>
+          </select>
+
+          <br/>
+
+          <input type="submit" value ="Register" (click)="registerUser()"/>
+          <br/>
+          {{msg}}
+
+
+
+      </form>
+    </div>
+  </div>
+</div>

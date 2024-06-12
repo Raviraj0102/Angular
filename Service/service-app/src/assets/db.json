@@ -1,0 +1,22 @@
+[
+    {
+        "pid":101,
+        "pname":"Mobile1",
+        "price":1000
+    },
+    {
+        "pid":102,
+        "pname":"Mobile2",
+        "price":2000
+    },
+    {
+        "pid":103,
+        "pname":"Mobile3",
+        "price":3000
+    },
+    {
+        "pid":104,
+        "pname":"Mobile4",
+        "price":4000
+    }
+]

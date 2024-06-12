@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row">
+    <div class="com-md-12">
+
+      <form #loginForm="ngForm" (ngSubmit)="login(loginForm.value)">
+        <input type="text" name="email" placeholder="enter the email" ngModel><br><br>
+        <input type="password" name="password" placeholder="enter the password" ngModel><br><br>
+
+        <button>Login</button>
+
+
+
+
+      </form>
+    </div>
+  </div>
+</div>

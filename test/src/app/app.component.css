@@ -1,0 +1,19 @@
+h1,h2{
+    background-color: rgb(128, 50, 223);
+    color: yellow;
+    size: 30px;
+}
+.headerpart,.footerType{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+ .contentType{
+    text-align: left;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+img{
+    width: 300px;
+    height: 30c0px;
+}

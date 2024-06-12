@@ -1,0 +1,37 @@
+.container{
+    width: 450px;
+    height: 150px;
+    background-color: aquamarine;
+    border: 1px black solid;
+    padding: 10px;
+    color: red;
+    display: inline-flex;
+}
+.c1{
+
+    width: 160px;
+    height: 80px;
+    background-color: chartreuse;
+    border: 1px black solid;
+    padding: 10px;
+    color: rebeccapurple;
+   margin-left: 20px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   margin-right: 20px;
+}
+
+.c2{
+    width: 160px;
+    height: 80px;
+    background-color:coral;
+    border: 1px black solid;
+    padding: 10px;
+    color: rebeccapurple;
+    margin-left: 20px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   margin-right: 20px;
+    
+}
+

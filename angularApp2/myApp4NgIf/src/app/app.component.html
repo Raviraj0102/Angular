@@ -1,0 +1,170 @@
+<div class="container">
+
+  <div class="headerPart">
+<h1>Header Part</h1>
+
+  </div>
+<div *ngIf="status"class="contentPart">
+
+  <h2>Inside the contentPart...</h2>
+
+
+</div>
+
+
+<div *ngIf="status1; then template1;else template2" class="contentPart-ngIfElse">
+
+
+
+</div>
+<ng-template #template1>
+<div class="section1">
+    <h2>Section---1</h2>
+</div>
+</ng-template>
+
+<ng-template  #template2>
+<div class="section">
+    <h2>Section----2</h2>
+
+</div>
+</ng-template>
+
+<div class="contentType_NgSwitch">
+      <div [ngSwitch]= "country1">
+        <p *ngSwitchCase= "'India'" >Selected India</p>
+        <p *ngSwitchDefault="">Please select the country name properly</p>
+
+
+      </div>
+
+</div>
+
+<div class="contentType_NgFor">
+
+<hr/>
+<h2>All the Country Name</h2>
+<ul type = "circle" *ngFor="let country of countryName1">
+  <li>{{country}}</li>
+  
+
+
+</ul>
+<hr/>
+
+</div>
+
+<div class="contentType_Select">
+
+  <div class="selectOption">
+    <h3>Select the country and Describe the detail</h3>
+    <select [(ngModel)]="country2">
+      <option></option>
+      <option >India</option>
+      <option >China</option>
+      <option >USA</option>
+    </select>
+
+    <div class="details" [ngSwitch]="country2">
+        <p *ngSwitchCase="'India'">
+          Provide the details of INDIA
+        </p>
+
+        <p *ngSwitchCase="'China'">
+          Provide the details of CHINA
+        </p>
+
+        <p *ngSwitchCase="'USA'">
+          Provide the details of USA
+        </p>
+
+        <p *ngSwitchDefault="">
+          Select the country
+        </p>
+
+    </div>
+
+  </div>
+</div>
+<hr/>
+
+<div class="contentType_NgFor">
+      <h2>------NgFor-------</h2>
+      <table class="table  bg-white">
+        <thead>
+          <tr >
+            <th scope="col">#</th>
+            <th scope="col">ID</th>
+            <th scope="col">NAME</th>
+            <th scope="col">IMAGE</th>
+            <th scope="col">PRICE</th>
+            <th scope="col"  colspan="2">ACTIONS</th>
+
+           
+          </tr>
+        </thead>
+        <tbody>
+          <tr   *ngFor="let product of products, index as i">
+            <th scope="row">{{i+1}}</th>
+            <td>{{product.id}}</td>
+            <td>{{product.name}}</td>
+            <td><img src="{{product.image}}"/></td>
+            <td>{{product.price}}</td>
+            <td><button class="btn btn-primary">EDIT</button></td>
+            <td><button class="btn btn-danger">DELETE</button></td>
+            
+          
+          </tr>
+        
+        </tbody>
+      </table>
+  
+
+</div>
+<hr/>
+<hr/>
+<hr/>
+
+
+<div class="contentType_Exg">
+     <div class="ItemsDisplay">
+
+      <h2>Display the items</h2>
+        <input type="text" name="item" placeholder="Enter some Items" #item>
+        <button class="btn btn-primary" (click)="addItem(item)">Add Items</button>
+
+
+     </div>
+
+    <div class="myData">
+
+      <table>
+        <thead>
+          <tr>
+            
+            <th>Name</th>
+            
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr *ngFor="let it1 of items">
+            <td>{{it1.item}}</td>
+          </tr>
+        </tbody>
+
+      </table>
+    </div>
+
+
+
+</div>
+<hr/>
+<div class="footerPart">
+
+
+  CopyWrite-2024
+</div>
+
+
+</div>

@@ -1,0 +1,14 @@
+.container{
+    width: 1400px;
+    height: 1000px;
+    background-color: aquamarine;
+    border: 2px solid black;
+}
+.myClass{
+    
+    background-color: darkkhaki;
+    border: 2px solid red;
+    color: black;
+font-size: 30px;
+text-align: center;
+}

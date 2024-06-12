@@ -1,0 +1,10 @@
+<h1>Hello</h1>
+
+<button (click)="getmsg('hello')">Click</button><br/><br/>
+<input type=" text"  #box (keyup)="getmsg(box.value)"   placeholder="event keyup"/><br/><br/>
+<input type=" text"  #box1 (keydown)="getmsg(box1.value)"   placeholder="event keydown"/><br/><br/>
+<input type=" text"  #box2 (blur)="getmsg(box2.value)"   placeholder="event blur"/><br/><br/>
+
+<hr/>
+
+<app-counter></app-counter>

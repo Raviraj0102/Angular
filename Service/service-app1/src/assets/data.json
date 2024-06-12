@@ -1,0 +1,22 @@
+[{
+    "pid":101,
+    "pname":"apple",
+    "price":100000,
+    "discount":0.02
+},
+{
+    "pid":102,
+    "pname":"laptop",
+    "price":200000,
+    "discount":0.01
+
+},
+{
+    "pid":103,
+    "pname":"Ssd",
+    "price":3000,
+    "discount":0.03
+}
+
+
+]

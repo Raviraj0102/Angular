@@ -1,0 +1,27 @@
+<div class="container">
+
+  <div class="row">
+<div class="col-md-12">
+
+  <h2>{{title}}</h2>
+  <hr/>
+  
+</div>
+  </div><!-- For Parent... -->
+  <div class="row">
+<div class="col-md-12">
+<!--  <button (click)="someChanges()">Click</button>-->
+<input type="text" name=" msg" [(ngModel)]="msg" placeholder="Enter some data"/>
+  <hr/>
+</div>
+</div>
+  <div class="row">
+<div class="col-md-12">
+<app-child [msg]="msg"></app-child>
+  
+</div>
+
+  </div ><!-- For Child... -->
+
+  
+</div>

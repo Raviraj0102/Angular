@@ -1,0 +1,10 @@
+<div style="border:1px solid blue;width: 20%;padding:20px ;">
+
+<h3>Parrent Component</h3>
+<input type ="text" [(ngModel)] ="txtInput">
+<input type ="button" value ="ParentButton">
+
+<app-child [messageFromParent]="txtInput"></app-child>
+
+
+</div>
